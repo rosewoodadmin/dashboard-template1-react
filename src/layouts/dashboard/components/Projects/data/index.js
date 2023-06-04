@@ -35,6 +35,10 @@ import team3 from "assets/images/team-3.jpg";
 import team4 from "assets/images/team-4.jpg";
 
 export default function data() {
+  // List of symbols
+  const symbols = ["SPY", "IWM", "IWO", "USO", "EEM", "TLT", "XLI", "XLU", "XOM", "META", "GOOG"];
+  // Scores for each symbol
+  const scores = [3, 6, 4, 8, 1, 5, 8, 9, 4, 8];
   const avatars = (members) =>
     members.map(([image, name]) => (
       <Tooltip key={name} title={name} placeholder="bottom">

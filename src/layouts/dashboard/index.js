@@ -36,7 +36,7 @@ import Projects from "layouts/dashboard/components/Projects";
 import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
 
 function Dashboard() {
-  const { sales, tasks } = reportsLineChartData;
+  const { data1, data2, data3, data4, data5, data6, data7, data8, data9 } = reportsLineChartData;
 
   return (
     <DashboardLayout>
@@ -107,27 +107,12 @@ function Dashboard() {
           <Grid container spacing={3}>
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
-                <ReportsBarChart
-                  color="info"
-                  title="website views"
-                  description="Last Campaign Performance"
-                  date="campaign sent 2 days ago"
-                  chart={reportsBarChartData}
-                />
-              </MDBox>
-            </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mb={3}>
                 <ReportsLineChart
-                  color="success"
-                  title="daily sales"
-                  description={
-                    <>
-                      (<strong>+15%</strong>) increase in today sales.
-                    </>
-                  }
-                  date="updated 4 min ago"
-                  chart={sales}
+                  color="dark"
+                  title="SPY"
+                  description="Last Campaign Performance"
+                  date="just updated"
+                  chart={data1}
                 />
               </MDBox>
             </Grid>
@@ -135,10 +120,87 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="dark"
-                  title="completed tasks"
+                  title="IWM"
                   description="Last Campaign Performance"
                   date="just updated"
-                  chart={tasks}
+                  chart={data2}
+                />
+              </MDBox>
+            </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+                <ReportsLineChart
+                  color="dark"
+                  title="IWO"
+                  description="Last Campaign Performance"
+                  date="just updated"
+                  chart={data3}
+                />
+              </MDBox>
+            </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+                <ReportsLineChart
+                  color="dark"
+                  title="QQQ"
+                  description="Last Campaign Performance"
+                  date="just updated"
+                  chart={data4}
+                />
+              </MDBox>
+            </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+                <ReportsLineChart
+                  color="dark"
+                  title="USO"
+                  description="Last Campaign Performance"
+                  date="just updated"
+                  chart={data5}
+                />
+              </MDBox>
+            </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+                <ReportsLineChart
+                  color="dark"
+                  title="EEM"
+                  description="Last Campaign Performance"
+                  date="just updated"
+                  chart={data6}
+                />
+              </MDBox>
+            </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+                <ReportsLineChart
+                  color="dark"
+                  title="TLT"
+                  description="Last Campaign Performance"
+                  date="just updated"
+                  chart={data7}
+                />
+              </MDBox>
+            </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+                <ReportsLineChart
+                  color="dark"
+                  title="XLP"
+                  description="Last Campaign Performance"
+                  date="just updated"
+                  chart={data8}
+                />
+              </MDBox>
+            </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+                <ReportsLineChart
+                  color="dark"
+                  title="XLU"
+                  description="Last Campaign Performance"
+                  date="just updated"
+                  chart={data9}
                 />
               </MDBox>
             </Grid>
